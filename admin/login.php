@@ -9,13 +9,13 @@
 ******************************************************/
 include('../inc/config.php');
 if(isset($_SESSION['login'])) {
-	header("Location: index.php"); die();
+	header("Location: /admin/index.php"); die();
 }
 if (isset($_POST['submit'])){
 $password = md5($_POST['admin_password']);
 if($password == $settings['password']){
 	$_SESSION['login'] = true;
-	header("Location: index.php");
+	header("Location: /admin/login.php");
 	die();
 }else{
 	$output = "<div class='alert alert-danger m-0 mt-2'>Şifre yanlış.</div>";
