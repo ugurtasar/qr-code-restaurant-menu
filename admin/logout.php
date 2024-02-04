@@ -9,5 +9,5 @@
 ******************************************************/
 session_start();
 unset($_SESSION["login"]);
-header("Location: login.php");
+header("Location: /admin/login.php");
 ?>
