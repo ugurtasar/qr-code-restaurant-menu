@@ -38,7 +38,7 @@ include('header.php');
 			<?php echo $output; ?>
 		</div>
 		<?php endif; ?>
-		<form method="POST" action="" enctype="multipart/form-data"">
+		<form method="POST" action="#" enctype="multipart/form-data">
 		<div class="row">
 			<div class="col-12">
 				<div class="mb-3">
