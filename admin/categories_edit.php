@@ -1,8 +1,6 @@
 <?php
 /******************************************************
 *******************************************************
-****************** PHPHUNT SCRIPTS ********************
-*************  https://www.phphunt.com   **************
 **** This software is distributed free of charge. *****
 ******** for coding projects: utasar@icloud.com *******
 *******************************************************
@@ -32,7 +30,7 @@ $datas = $onpage->findById(intval($_GET['id']));
 			<?php echo $output; ?>
 		</div>
 		<?php endif; ?>
-		<form method="POST" action="" enctype="multipart/form-data"">
+		<form method="POST" action="" enctype="multipart/form-data">
 		<div class="row">
 			<div class="col-12">
 				<div class="form-outline mb-4">
