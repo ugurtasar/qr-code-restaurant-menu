@@ -34,7 +34,7 @@ $products = $productsStore->findBy([["category", "=", $categoriesVal['_id']],"AN
 <?php if(empty($categoriesVal['image'])): ?>
 <h2 class="d-block mb-4 text-uppercase fw-bold fs-3"><?php echo $categoriesVal['title']; ?></h2>
 <?php else: ?>
-<div class="d-block mb-4 text-uppercase fw-bold bg-head rounded-3 overflow-hidden position-relative" style="background-image: url('<?php echo $categoriesVal['image']; ?>');">
+<div class="d-block mb-4 text-uppercase fw-bold bg-head rounded-3 overflow-hidden position-relative" style="background-image: url('<?php echo siteUrl().'/'.$categoriesVal['image']; ?>');">
 	<h2 class="position-relative m-0 bg-primary d-inline-block bg-gradient px-3 py-2 rounded-3 fw-bold text-light"><?php echo $categoriesVal['title']; ?></h2>
 </div>
 <?php endif; ?>
@@ -43,8 +43,8 @@ $products = $productsStore->findBy([["category", "=", $categoriesVal['_id']],"AN
 <?php foreach($products as $productsVal): ?>
   <div class="col">
 	<div class="card h-100 border-0 rounded-2 shadow-none overflow-hidden">
-	  <a class="productsimg" href="<?php echo $productsVal['image']; ?>" title="<?php echo $productsVal['title']; ?>">
-	  <img src="<?php echo $productsVal['image']; ?>" class="card-img-top rounded-3 shadow-lg" alt="<?php echo $productsVal['title']; ?>">
+	  <a class="productsimg" href="<?php echo siteUrl().'/'.$productsVal['image']; ?>" title="<?php echo $productsVal['title']; ?>">
+	  <img src="<?php echo siteUrl().'/'.$productsVal['image']; ?>" class="card-img-top rounded-3 shadow-lg" alt="<?php echo $productsVal['title']; ?>">
 	  </a>
 	  <div class="card-body d-flex flex-column py-3 px-2">
 		<h5 class="card-title fs-4"><?php echo $productsVal['title']; ?></h5>
