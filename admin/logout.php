@@ -7,7 +7,7 @@
 ******** for coding projects: utasar@icloud.com *******
 *******************************************************
 ******************************************************/
-session_start();
+include('../inc/config.php');
 unset($_SESSION["login"]);
-header("Location: /admin/login.php");
+header("Location: ".siteUrl().'/admin/login.php');
 ?>
