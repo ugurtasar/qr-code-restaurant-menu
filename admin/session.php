@@ -8,6 +8,6 @@
 *******************************************************
 ******************************************************/
 if(!isset($_SESSION['login'])) {
-	header("Location: /admin/login.php"); die();
+	header("Location: ".siteUrl().'/admin/login.php'); die();
 }
 ?>
